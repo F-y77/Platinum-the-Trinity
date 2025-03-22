@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
-name = "Extended Sample Character"
-description = "A character template for Don't Starve Together."
-author = "Dragon Wolf Leo"
-version = "1.2.6" -- This is the version of the template. Change it to your own number.
+name = "Platinum"
+description = "苍翼默示录的白金角色 (Platinum from BlazBlue)"
+author = "Va6gn"
+version = "0.1" -- 按照你的要求设置版本
 
 -- This is the URL name of the mod's thread on the forum; the part after the ? and before the first & in the url
 forumthread = "/files/file/950-extended-sample-character/"
@@ -21,12 +21,15 @@ shipwrecked_compatible = false
 -- Character mods are required by all clients
 all_clients_require_mod = true 
 
-icon_atlas = "modicon.xml"
-icon = "modicon.tex"
+icon_atlas = "trinity.xml"
+icon = "trinity.tex"
 
 -- The mod's tags displayed on the server list
 server_filter_tags = {
 "character",
+"blazblue",
+"platinum_the_trinity",
+"白金"
 }
 
 --configuration_options = {}
