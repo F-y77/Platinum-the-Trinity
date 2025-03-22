@@ -33,12 +33,30 @@ Assets = {
 	
 	Asset( "IMAGE", "images/names_gold_platinum.tex" ),
     Asset( "ATLAS", "images/names_gold_platinum.xml" ),
+    
+    -- 添加角色动画构建文件
+    Asset( "ANIM", "anim/platinum.zip" ),
+    Asset( "ANIM", "anim/ghost_platinum_build.zip" ),
 }
 
 AddMinimapAtlas("images/map_icons/platinum.xml")
 
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
+
+-- 注册角色动画构建
+-- 确保这些全局表存在
+if GLOBAL.PREFAB_SKINS == nil then
+    GLOBAL.PREFAB_SKINS = {}
+end
+
+if GLOBAL.SKIN_PREFABS == nil then
+    GLOBAL.SKIN_PREFABS = {}
+end
+
+-- 然后再设置值
+GLOBAL.PREFAB_SKINS["platinum"] = { "platinum_none" }
+GLOBAL.SKIN_PREFABS["platinum_none"] = { "platinum" }
 
 -- The character select screen lines
 STRINGS.CHARACTER_TITLES.platinum = "复制人偶"
